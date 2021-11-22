@@ -108,3 +108,41 @@ export interface Pedido {
   condiciones: string;
   tipoPedido: TipoPedido;
 }
+
+/*INFORMACION DE LAS AREAS REFERENTE AL  LLENADO*/
+
+/*Facturacion*/
+export interface Facturacion {
+  nombreSucursal: string; // Se recibe el valor de Sucursal.nombreSucursal
+  montoPedido: number;
+  totalPedido: number;
+  embarque: number;
+  factura: number;
+}
+
+/*Atencion a Clientes*/
+export interface AtencionClientes {
+  nombreSucursal: string; // Se recibe el valor de Sucursal.nombreSucursal
+  piezasRequeridas: number;
+  piezasSurtidas: number;
+  tipoPedido: TipoPedido;
+  montoPedido: number;
+  montoIVA: number;
+  //  Algunas partes mas del pedido
+}
+
+/*Jefatura Almacen*/
+export interface JefaturaAlmacen {
+  nombreSucursal: string; // Se recibe el valor de Sucursal.nombreSucursal
+  turno: string;
+  tipoPedido: TipoPedido;
+  chofer: Chofer;
+  copiloto: Copiloto;
+  unidad: Unidad;
+  horaSalidad: number;
+  kmSalida: number;
+  horaLlegada: number;
+  kmLlegada: number;
+  incidencia: Incidencias;
+  anotaciones: string;
+}
