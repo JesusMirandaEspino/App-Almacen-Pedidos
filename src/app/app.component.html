@@ -1,106 +1,58 @@
 <h1>App Almacen</h1>
 <p>Llenado tienda pedido para Almacen</p>
 
-
 <section>
-
   <div>
     <div>
-      <h1>Jefatura Almacen Ruta</h1>
+      <h1>Facturacion</h1>
     </div>
-  </div>
 
-
-  <div>
     <div>
-      <h3>Fecha:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>N.- Pedido</th>
+            <th>Nombre</th>
+            <th>Sucursal</th>
+            <th>USO de CFDI:</th>
+            <th>Condiciones:</th>
+            <th>Tipo de pago:</th>
+            <th>Banco:</th>
+            <th>Numero de Cuenta:</th>
+            <th>Clave interbancaria:</th>
+            <th>Monto</th>
+            <th>Monto + IVA</th>
+            <th>Embarque</th>
+            <th>Factura</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </div>
-
-
 </section>
 
-<!------------------------------------->
-<!--Seccion asignada para cada chofer-->
-<!------------------------------------->
-<section>
+<!--Ejemplo facturacion Llenado Individual-->
 
-<div>
-    <div>
-      <h4>Chofer:  </h4>
-      <h4>Unidad: Sin unidad / asignar Unidad</h4>
-      <form action="">
-        <select name="" id="">
-          <option value="">Unidad1</option>
-          <option value="">Unidad2</option>
-          <option value="">Unidad3</option>
-        </select>
-        <button>Asignar</button>
-      </form>
-    </div>
-</div>
+<form action="">
+  <h4>N.- Pedido:</h4>
+  <h4>Nombre:</h4>
+  <h4>Sucursal:</h4>
+  <h4>USO de CFDI:</h4>
+  <h4>Condiciones:</h4>
+  <h4>Tipo de pago:</h4>
+  <h4>Banco:</h4>
+  <h4>Numero de Cuenta:</h4>
+  <h4>Clave interbancaria:</h4>
 
+  <label for="">Monto</label>
+  <input type="text" />
 
-<div>
-  <div>
-    <form action="">
-      <label for="">Hora de salida</label>
-      <input type="text">
-      <label for="">km salida</label>
-      <input type="text">
+  <label for="">Monto + IVA</label>
+  <input type="text" />
 
+  <label for="">Embarque</label>
+  <input type="text" />
 
-      <input type="button" value="Iniciar Ruta" >
-
-    </form>
-  </div>
-</div>
-
-
-<!--Seccion para asignar pedidos-->
-<div>
-  <div>
-    <h4>Pedidos</h4>
-    <button>Agregar Pedido a Ruta</button>
-  </div>
-  <div>
-    <table>
-      <thead>
-        <tr>
-          <th>Numero Pedido</th>
-          <th>Sucursal</th>
-          <th>Nombre Cliente</th>
-          <th>Domicilio</th>
-          <th>Horario Referencia</th>
-          <th>Quien Recibe</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-</div>
-
-
-<div>
-  <div>
-    <form action="">
-      <label for="">Hora de  llegada</label>
-      <input type="text">
-      <label for="">Km llegada</label>
-      <input type="text">
-      <label for="">Incidencia</label>
-      <input type="text">
-      <label for="">Anotaciones</label>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-
-      <input type="button" value="Cerrar Ruta" >
-
-    </form>
-  </div>
-</div>
-
-
-
-</section>
-<!------------------------------------->
-<!------------------------------------->
-<!------------------------------------->
+  <label for="">Factura</label>
+  <input type="text" />
+</form>
